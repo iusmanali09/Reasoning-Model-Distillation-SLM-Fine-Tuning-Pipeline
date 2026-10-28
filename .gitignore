@@ -1,0 +1,16 @@
+.venv/
+.env
+__pycache__/
+*.py[cod]
+.cache/
+outputs/*
+!outputs/.gitkeep
+data/private/
+data/processed/
+data/*.jsonl
+!data/teacher.example.jsonl
+data/processed/
+*.safetensors
+*.bin
+*.gguf
+

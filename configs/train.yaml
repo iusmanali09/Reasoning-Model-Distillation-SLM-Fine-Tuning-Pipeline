@@ -1,0 +1,20 @@
+# Select a model you are licensed to use and that fits your GPU memory.
+model_name_or_path: Qwen/Qwen2.5-3B-Instruct
+data_dir: data/processed
+output_dir: outputs/reasoning-slm-adapter
+max_seq_length: 4096
+learning_rate: 0.0001
+num_train_epochs: 2
+per_device_train_batch_size: 1
+per_device_eval_batch_size: 1
+gradient_accumulation_steps: 8
+lora_rank: 16
+lora_alpha: 32
+lora_dropout: 0.05
+validation_fraction: 0.05
+seed: 42
+load_in_4bit: true
+bf16: true
+fp16: false
+trust_remote_code: false
+
